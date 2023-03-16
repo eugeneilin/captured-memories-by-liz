@@ -1,0 +1,19 @@
+#home #home-featured-gallery {
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25rem;
+  background: url('../../../assets/slider.png') no-repeat center / cover;
+}
+
+/* -------------------- MEDIUM Devices -------------------- */
+@media only screen and (min-width: 768px) {
+}
+
+/* -------------------- LARGER Devices -------------------- */
+@media only screen and (min-width: 1024px) {
+  #home #home-featured-gallery {
+    height: 45rem;
+  }
+}

@@ -86,10 +86,22 @@ button:hover {
   cursor: pointer;
 }
 
+section {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
 /* Utilities */
 .container {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 .admin-active-link {
@@ -98,6 +110,11 @@ button:hover {
   border-bottom-left-radius: 25px;
   color: black;
   font-weight: 400 !important;
+}
+
+.main-window-sidebar {
+  display: flex;
+  flex-direction: column;
 }
 
 /* -------------------- MEDIUM Devices -------------------- */

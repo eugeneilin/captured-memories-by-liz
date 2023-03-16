@@ -1,33 +1,34 @@
 import React from 'react';
-import '../../App.css';
+import { Link } from 'react-router-dom';
+import '../../../App.css';
 import './navbar.css';
 
 const Navbar = () => {
   return (
     <nav className='container'>
       <h1>
-        <a href='/'>Captured Memories by Liz</a>
+        <Link to='/'>Captured Memories by Liz</Link>
       </h1>
       <h5>Portraits, Engagements, Couples, Family Photographer</h5>
       <h5>Serving Charlotte, North Carolina</h5>
       <ul>
         <li>
-          <a href='/'>Home</a>
+          <Link to='/'>Home</Link>
         </li>
         <li>
-          <a href='/liz'>Liz</a>
+          <Link to='/liz'>Liz</Link>
         </li>
         <li>
-          <a href='/portfolio'>Portfolio</a>
+          <Link to='/portfolio'>Portfolio</Link>
         </li>
         <li>
-          <a href='/investment'>Investment</a>
+          <Link to='/investment'>Investment</Link>
         </li>
         <li>
-          <a href='/contact'>Contact</a>
+          <Link to='/contact'>Contact</Link>
         </li>
         <li>
-          <a href='/admin'>Admin</a>
+          <Link to='/admin'>Admin</Link>
         </li>
       </ul>
     </nav>

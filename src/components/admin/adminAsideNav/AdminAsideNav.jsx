@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './adminAsideNav.css';
 
 const AdminAsideNav = () => {
@@ -6,69 +7,69 @@ const AdminAsideNav = () => {
     <aside>
       <h5>Main</h5>
       <div className='admin-links'>
-        <a href='/admin'>
+        <Link to='/admin'>
           <i class='fa-solid fa-house'></i>
           Dashboard
-        </a>
-        <a href='/'>
+        </Link>
+        <Link to='/'>
           <i class='fa-solid fa-globe'></i>
           View Website
-        </a>
+        </Link>
       </div>
       <h5>Website</h5>
       <div className='admin-links'>
-        <a href='#'>
-          <i class='fa-solid fa-images'></i>
-          Galleries
-        </a>
-        <a href='#'>
-          <i class='fa-regular fa-image'></i>
-          Other Images
-        </a>
-        <a href='#'>
+        <Link to='/admin/text'>
           <i class='fa-solid fa-file-lines'></i>
           Text
-        </a>
+        </Link>
+        <Link to='#'>
+          <i class='fa-solid fa-images'></i>
+          Galleries
+        </Link>
+        <Link to='#'>
+          <i class='fa-regular fa-image'></i>
+          Other Images
+        </Link>
       </div>
       <h5>Clients</h5>
       <div className='admin-links'>
-        <a href='#'>
+        <Link to='#'>
           <i class='fa-solid fa-link'></i>
           Links
-        </a>
-        <a href='#'>
+        </Link>
+        <Link to='#'>
           <i class='fa-solid fa-handshake'></i>
           Something
-        </a>
+        </Link>
       </div>
       <h5>Another Header</h5>
       <div className='admin-links'>
-        <a href='#'>
+        <Link to='#'>
           <i class='fa-solid fa-hand-peace'></i>
           More Options
-        </a>
-        <a href='#'>
+        </Link>
+        <Link to='#'>
           <i class='fa-solid fa-thumbs-up'></i>
           And Some More
-        </a>
+        </Link>
       </div>
-      <h5>Testing Scene</h5>
+      <h5>Testing Zone</h5>
       <div className='admin-links'>
-        <a href='/admin/add-doc'>
+        <Link to='#'>
           <i class='fa-solid fa-file-circle-plus'></i>
           Add Document
-        </a>
-        <a href='#'>
+        </Link>
+        <Link to='#'>
           <i class='fa-solid fa-code'></i>
           Placeholder
-        </a>
+        </Link>
       </div>
       <h5>User</h5>
       <div className='admin-links'>
-        <a href='#'>
+        <Link to='#'>
           <i class='fa-solid fa-arrow-right-from-bracket'></i>
           Log Out
-        </a>
+        </Link>
       </div>
     </aside>
   );

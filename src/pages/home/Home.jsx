@@ -1,7 +1,8 @@
 import React from 'react';
-import Navbar from '../../components/navbar/Navbar';
-import Footer from '../../components/footer/Footer';
-import FeaturedGallery from '../../components/featuredGallery/FeaturedGallery';
+import Navbar from '../../components/website/navbar/Navbar';
+import Footer from '../../components/website/footer/Footer';
+import FeaturedGallery from '../../components/website/featuredGallery/FeaturedGallery';
+import About from '../../components/website/about/About.jsx';
 import './home.css';
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
     <div id='home'>
       <Navbar />
       <FeaturedGallery />
+      <About />
       <Footer />
     </div>
   );

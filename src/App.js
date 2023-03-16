@@ -6,6 +6,7 @@ import Investment from './pages/investment/Investment';
 import Contact from './pages/contact/Contact';
 import Login from './pages/login/Login';
 import Admin from './pages/admin/Admin';
+import AddDoc from './pages/addDoc/AddDoc';
 import { AuthContext } from './context/AuthContext';
 import './App.css';
 import { useContext } from 'react';
@@ -34,6 +35,14 @@ const App = () => {
             element={
               <RequireAuth>
                 <Admin />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path='/admin/add-doc'
+            element={
+              <RequireAuth>
+                <AddDoc />
               </RequireAuth>
             }
           />

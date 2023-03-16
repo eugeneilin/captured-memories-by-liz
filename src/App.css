@@ -92,6 +92,14 @@ button:hover {
   padding-right: 1rem;
 }
 
+.admin-active-link {
+  background: var(--primary-color);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  color: black;
+  font-weight: 400 !important;
+}
+
 /* -------------------- MEDIUM Devices -------------------- */
 @media only screen and (min-width: 768px) {
 }

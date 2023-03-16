@@ -1,0 +1,33 @@
+.admin-page div aside {
+  border-right: 1px solid var(--light-grey-color);
+  height: calc(100vh - 45px);
+  width: 16rem;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+}
+
+.admin-page div aside h5 {
+  font-weight: 700;
+}
+
+.admin-page div aside .admin-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.admin-page div aside .admin-links a {
+  margin: 0.1rem 0;
+  padding: 0.2rem 0.8rem;
+  font-weight: 300;
+  color: var(--third-color);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.admin-page div aside .admin-links a:hover {
+  background: var(--primary-color);
+  color: black;
+}
+
+.admin-page div aside .admin-links a i {
+  padding-right: 0.5rem;
+}

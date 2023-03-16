@@ -1,29 +1,14 @@
 import React from 'react';
+import AdminAsideNav from '../../components/adminAsideNav/AdminAsideNav';
+import AdminTopNav from '../../components/adminTopNav/AdminTopNav';
 import './admin.css';
 
 const Admin = () => {
   return (
-    <div id='admin-page'>
-      <h4>Admin Panel</h4>
+    <div class='admin-page'>
+      <AdminTopNav />
       <div>
-        <aside>
-          <h5>Website</h5>
-          <div className='admin-links'>
-            <a href='#'>Galleries</a>
-            <a href='#'>Scattered Images</a>
-            <a href='#'>Text</a>
-          </div>
-          <h5>Clients</h5>
-          <div className='admin-links'>
-            <a href='#'>Links</a>
-            <a href='#'>Something</a>
-          </div>
-          <h5>Another Header</h5>
-          <div className='admin-links'>
-            <a href='#'>More Options</a>
-            <a href='#'>And Some More</a>
-          </div>
-        </aside>
+        <AdminAsideNav />
         <main>Main Window</main>
       </div>
     </div>

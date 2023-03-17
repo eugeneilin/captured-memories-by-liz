@@ -19,7 +19,7 @@ const App = () => {
   };
 
   // console.log(currentUser);
-  console.log('Hello');
+  console.log('another commit');
 
   return (
     <div className='App'>

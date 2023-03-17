@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../../config/firebase.js';
+// import { auth } from '../../config/firebase.js';
 import './login.css';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
@@ -17,7 +17,7 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    signInWithEmailAndPassword(auth, email, password)
+    signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
         const user = userCredential.user;
         dispatch({ type: 'LOGIN', payload: user });

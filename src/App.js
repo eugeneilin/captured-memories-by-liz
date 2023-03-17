@@ -18,7 +18,8 @@ const App = () => {
     return currentUser ? children : <Navigate to='/login' />;
   };
 
-  console.log(currentUser);
+  // console.log(currentUser);
+  console.log('Hello');
 
   return (
     <div className='App'>

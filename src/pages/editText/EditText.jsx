@@ -10,24 +10,7 @@ const EditText = () => {
       <div>
         <AdminAsideNav />
         <main>
-          <div className='main-window-sidebar'>
-            <ul>
-              <li>asdfasdf</li>
-            </ul>
-            <ul>
-              <li>asdfasdf</li>
-            </ul>
-            <ul>
-              <li>asdfasdf</li>
-            </ul>
-            <ul>
-              <li>asdfasdf</li>
-            </ul>
-            <ul>
-              <li>asdfasdf</li>
-            </ul>
-          </div>
-          <div className='main-window'>Edit Text Here</div>
+          <div className='admin-card'>asdfasdf</div>
         </main>
       </div>
     </div>

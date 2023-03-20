@@ -1,7 +1,10 @@
 .admin-page div aside {
   border-right: 1px solid var(--light-grey-color);
+  background: var(--light-color);
   height: calc(100vh - 45px);
-  width: 16rem;
+  width: 14rem;
+  position: fixed;
+  top: 3.5rem;
   padding: 1.5rem 0 1rem 1.5rem;
 }
 

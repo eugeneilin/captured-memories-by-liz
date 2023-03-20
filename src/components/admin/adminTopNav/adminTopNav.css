@@ -1,8 +1,18 @@
-.admin-top-nav h4 {
+.admin-top-nav {
+  height: 3.5rem;
+  position: fixed;
+  width: 100%;
+}
+
+.admin-top-nav h3 {
   text-align: center;
   border-bottom: 1px solid var(--light-grey-color);
-  padding: 0.5rem 0;
   text-transform: uppercase;
-  background: var(--light-color);
+  background: var(--primary-color);
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0px 0px 3px var(--third-color);
 }

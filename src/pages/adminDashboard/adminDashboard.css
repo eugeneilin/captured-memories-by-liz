@@ -12,8 +12,8 @@
 }
 
 .admin-page div main {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  width: 100%;
+  padding: 1rem;
+  width: calc(100% - 14rem);
+  margin-left: 14rem;
+  margin-top: 3.5rem;
 }

@@ -7,7 +7,7 @@ import Investment from './pages/investment/Investment';
 import Contact from './pages/contact/Contact';
 import Login from './pages/login/Login';
 import AdminDashboard from './pages/adminDashboard/AdminDashboard';
-import EditText from './pages/editText/EditText.jsx';
+import TextFields from './pages/textFields/TextFields.jsx';
 import { AuthContext } from './context/AuthContext';
 import './App.css';
 
@@ -17,9 +17,6 @@ const App = () => {
   const RequireAuth = ({ children }) => {
     return currentUser ? children : <Navigate to='/login' />;
   };
-
-  // console.log(currentUser);
-  console.log('testing a deploy');
 
   return (
     <div className='App'>
@@ -43,10 +40,10 @@ const App = () => {
           </Route>
           <Route path='admin'>
             <Route
-              path='text'
+              path='text-fields'
               element={
                 <RequireAuth>
-                  <EditText />
+                  <TextFields />
                 </RequireAuth>
               }
             />

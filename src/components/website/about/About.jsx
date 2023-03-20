@@ -8,7 +8,8 @@ const About = () => {
       <div>
         <div className='img'></div>
         <div className='paragraph'>
-          <p>
+          <h4>Text ID #1</h4>
+          <p id='text-id-1'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi expedita consequuntur
             odit consectetur, repudiandae pariatur? Praesentium blanditiis aperiam quibusdam autem
             excepturi explicabo at ratione corrupti repellendus esse. Accusamus perspiciatis

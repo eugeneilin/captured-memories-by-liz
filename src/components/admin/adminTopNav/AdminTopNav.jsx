@@ -4,7 +4,7 @@ import './adminTopNav.css';
 const AdminTopNav = () => {
   return (
     <div className='admin-top-nav'>
-      <h4>Admin Dashboard</h4>
+      <h3>Admin Dashboard</h3>
     </div>
   );
 };

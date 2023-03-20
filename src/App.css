@@ -27,7 +27,6 @@
 html,
 body {
   font-family: 'Lato', sans-serif;
-  background-color: var(--light-color);
   line-height: 1.6;
   color: var(--dark-color);
   min-height: 100%;
@@ -119,9 +118,9 @@ section {
 
 .admin-card {
   padding: 1rem 1rem 2rem;
-  border-bottom: 2px solid var(--primary-color);
-  margin: 1rem;
-  box-shadow: 0 0 2px 2px var(--light-grey-color);
+  /* border-bottom: 2px solid var(--primary-color); */
+  -webkit-box-shadow: 2px 4px 10px 1px var(--light-grey-color);
+  box-shadow: 2px 4px 10px 1px var(--light-grey-color);
 }
 
 /* -------------------- MEDIUM Devices -------------------- */

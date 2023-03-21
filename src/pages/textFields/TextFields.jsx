@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { db } from '../../config/firebase';
 import { getDocs, collection } from 'firebase/firestore';
 import AdminAsideNav from '../../components/admin/adminAsideNav/AdminAsideNav';
@@ -14,6 +15,7 @@ const TextFields = () => {
     try {
       const data = await getDocs(textFieldsCollectionRef);
       const filteredData = data.docs.map((doc) => ({
+        id: doc.id,
         ...doc.data(),
       }));
       setTextFieldsList(filteredData);
@@ -24,8 +26,10 @@ const TextFields = () => {
 
   useEffect(() => {
     getTextFields();
-    console.log(textFieldsList[0]);
+    // eslint-disable-next-line
   }, []);
+
+  console.log(textFieldsList);
 
   return (
     <div className='admin-page'>
@@ -37,7 +41,7 @@ const TextFields = () => {
             <table>
               <thead>
                 <tr>
-                  <th>Text ID</th>
+                  <th>ID</th>
                   <th>Preview</th>
                   <th>Page</th>
                   <th>Updated</th>
@@ -47,9 +51,11 @@ const TextFields = () => {
                 {textFieldsList.map((textField) => (
                   <tr>
                     <td>{textField.id}</td>
-                    <td>{textField.content}</td>
+                    <td>
+                      <Link to=''>{textField.content}</Link>
+                    </td>
                     <td>{textField.page}</td>
-                    {/* <td>{textField.updated}</td> */}
+                    <td>Today</td>
                   </tr>
                 ))}
               </tbody>

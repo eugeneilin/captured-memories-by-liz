@@ -5,7 +5,7 @@ import './adminDashboard.css';
 
 const AdminDashboard = () => {
   return (
-    <div class='admin-page'>
+    <div className='admin-page'>
       <AdminTopNav />
       <div>
         <AdminAsideNav />

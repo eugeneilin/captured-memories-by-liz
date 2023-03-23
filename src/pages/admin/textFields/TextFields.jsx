@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { db } from '../../config/firebase';
+// import { Link } from 'react-router-dom';
+import { db } from '../../../config/firebase';
 import { getDocs, collection } from 'firebase/firestore';
 import AdminAsideNav from '../../components/admin/adminAsideNav/AdminAsideNav';
 import AdminTopNav from '../../components/admin/adminTopNav/AdminTopNav';

@@ -117,10 +117,36 @@ section {
 }
 
 .admin-card {
+  display: flex;
+  flex-direction: column;
   padding: 1rem 1rem 2rem;
   /* border-bottom: 2px solid var(--primary-color); */
   -webkit-box-shadow: 2px 4px 10px 1px var(--light-grey-color);
   box-shadow: 2px 4px 10px 1px var(--light-grey-color);
+  margin-bottom: 2rem;
+}
+
+.admin-card h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0.5rem 0;
+}
+
+.admin-card li {
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0.3rem 0;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.admin-card li:hover {
+  background: var(--light-color);
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  transition: var(--transition);
+  opacity: 0.9;
 }
 
 /* -------------------- MEDIUM Devices -------------------- */

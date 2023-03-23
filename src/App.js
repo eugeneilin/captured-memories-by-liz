@@ -6,8 +6,10 @@ import Portfolio from './pages/portfolio/Portfolio';
 import Investment from './pages/investment/Investment';
 import Contact from './pages/contact/Contact';
 import Login from './pages/login/Login';
-import AdminDashboard from './pages/adminDashboard/AdminDashboard';
-import TextFields from './pages/textFields/TextFields.jsx';
+import AdminDashboard from './pages/admin/adminDashboard/AdminDashboard';
+import Images from './pages/admin/images/Images.jsx';
+import TextFields from './pages/admin/textFields/TextFields.jsx';
+import Links from './pages/admin/links/Links';
 import { AuthContext } from './context/AuthContext';
 import './App.css';
 
@@ -40,10 +42,26 @@ const App = () => {
           </Route>
           <Route path='admin'>
             <Route
-              path='text-fields'
+              path='/admin/images'
+              element={
+                <RequireAuth>
+                  <Images />
+                </RequireAuth>
+              }
+            />
+            <Route
+              path='/admin/text-fields'
               element={
                 <RequireAuth>
                   <TextFields />
+                </RequireAuth>
+              }
+            />
+            <Route
+              path='/admin/links'
+              element={
+                <RequireAuth>
+                  <Links />
                 </RequireAuth>
               }
             />
